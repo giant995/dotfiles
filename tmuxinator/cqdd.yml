@@ -1,0 +1,33 @@
+# /home/jm/.config/tmuxinator/cqdd.yml
+
+name: cqdd
+root: ~/
+
+startup_window: fe-be
+
+# startup_pane: 0
+
+
+windows:
+  - fe-be:
+      layout: even-vertical
+      panes:
+        - front-end:
+           - j oad
+           - nvm use 8
+           - npm run dev 
+        - back-end:
+           - j oad
+           - docker-compose up
+  - pycharm:
+      layout: main-vertical
+      panes:
+        - main:
+           - j oad
+           - /snap/pycharm-professional/230/bin/pycharm.sh ./
+  - main:
+      layout: main-vertical
+      panes:
+        - main:
+           - j oad
+           - clear
