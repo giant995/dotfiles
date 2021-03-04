@@ -35,6 +35,7 @@ function chpwd() {
 # ZSH
 alias ezsh='vim ~/.zshrc'
 alias ei3='vim ~/.config/i3/config'
+alias ei3b='vim ~/.config/i3/i3blocks.conf'
 alias szsh='source ~/.zshrc'
 alias j=jump
 
