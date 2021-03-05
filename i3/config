@@ -245,6 +245,8 @@ bindsym XF86AudioPrev exec playerctl previous
 # Monitor setup
 exec_always "bash /usr/local/bin/monitor.sh"
 
+# Wallpaper
+exec_always "feh --bg-scale ~/.config/i3/img/wallpaper.jpg"
 
 # Start apps
 exec --no-startup-id i3-msg 'exec /usr/bin/firefox; exec /snap/bin/slack'
