@@ -1,7 +1,8 @@
-# commands
-alias c=clear
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
+
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin/hugo
 
 ZSH_THEME="agnoster"
 
@@ -85,3 +86,7 @@ source ~/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # i3
 alias settings='env XDG_CURRENT_DESKTOP=GNOME gnome-control-center'
+
+# commands
+alias c=clear
+alias wally="/usr/local/bin/wally"
