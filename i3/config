@@ -129,7 +129,6 @@ workspace $ws4  output HDMI-2 eDP-1
 
 # app type to workspace definition
 assign [class="Navigator"] $ws1
-assign [class="jetbrains-pycharm"] $ws2 
 assign [class="Slack"] $ws3
 assign [class="spotify"] $ws4
 
