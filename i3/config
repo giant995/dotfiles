@@ -49,7 +49,7 @@ bindsym $mod+d exec rofi -show run
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
-bindsym $mod+l focus up
+#bindsym $mod+l focus up
 bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
@@ -255,3 +255,8 @@ exec blueman-applet
 
 # Caps lock indicator for i3blocks
 bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
+
+# Win+l to lock
+bindsym $mod+l exec "i3lock -i ~/.config/i3/img/lockscreen.png"
+
+focus_on_window_activation focus
