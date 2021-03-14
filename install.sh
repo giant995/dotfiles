@@ -33,3 +33,11 @@ if ! [ -L $ROFIDIR ]; then
 else
   echo $ROFIDIR "symlink already exists"
 fi
+
+# git
+GITDIR=~/.gitconfig
+if ! [ -L $GITDIR ]; then
+  ln -s ${BASEDIR}/.gitconfig $GITDIR
+else
+  echo $GITDIR "symlink already exists"
+fi
