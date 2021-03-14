@@ -1,6 +1,6 @@
 # dotfiles
 
-This is a repo of my most important dotfiles. It is a bad idea to fork that repo, but defintely dig in there to get inspired. Use at your own risks, nothing is guaranteed and I'm not responsible for any mess.
+This is a repo of my most important dotfiles. It is a bad idea to fork that repo, but definetly dig in there to get inspired. Use at your own risks, nothing is guaranteed and I'm not responsible for any mess.
 
 ## Get started
 
