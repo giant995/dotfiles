@@ -37,7 +37,7 @@ function chpwd() {
 alias ezsh='vim ~/.zshrc'
 alias ei3='vim ~/.config/i3/config'
 alias ei3b='vim ~/.config/i3/i3blocks.conf'
-alias szsh='source ~/.zshrc'
+alias szsh='exec zsh'
 alias j=jump
 
 # Docker
@@ -90,3 +90,22 @@ alias settings='env XDG_CURRENT_DESKTOP=GNOME gnome-control-center'
 # commands
 alias c=clear
 alias wally="/usr/local/bin/wally"
+
+function zsh_load_time_plugins() {
+    for plugin ($plugins); do
+          timer=$(($(gdate +%s%N)/1000000))
+          if [ -f $ZSH_CUSTOM/plugins/$plugin/$plugin.plugin.zsh ]; then
+            source $ZSH_CUSTOM/plugins/$plugin/$plugin.plugin.zsh
+          elif [ -f $ZSH/plugins/$plugin/$plugin.plugin.zsh ]; then
+            source $ZSH/plugins/$plugin/$plugin.plugin.zsh
+          fi
+          now=$(($(gdate +%s%N)/1000000))
+          elapsed=$(($now-$timer))
+          echo $elapsed":" $plugin
+        done
+}
+
+time_zsh() {
+  shell=${1-$SHELL}
+  for i in $(seq 1 10); do /usr/bin/time $shell -i -c exit; done
+}
