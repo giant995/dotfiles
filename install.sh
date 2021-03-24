@@ -41,11 +41,3 @@ if ! [ -L $GITDIR ]; then
 else
   echo $GITDIR "symlink already exists"
 fi
-
-# copyq
-COPYQDIR=~/.config/copyq
-if ! [ -d $COPYQDIR ]; then
-  ln -s ${BASEDIR}/copyq/ $COPYQDIR
-else
-  echo $COPYQDIR "symlink already exists"
-fi

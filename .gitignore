@@ -2,5 +2,3 @@ i3/config.save
 
 *.swp
 .ssh/
-
-copyq/*.dat
