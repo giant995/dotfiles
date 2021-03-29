@@ -248,7 +248,7 @@ exec --no-startup-id i3-msg 'exec /usr/bin/firefox; exec /snap/bin/slack'
 # Start bluetooth
 exec blueman-applet
 
-exec --no-startup-id i3-msg 'exec /usr/bin/copyq; exec /usr/bin/bitwarden; exec snap/bin/flameshot'
+exec --no-startup-id i3-msg 'exec /usr/bin/copyq; exec /usr/bin/bitwarden; exec /snap/bin/flameshot'
 
 # Caps lock indicator for i3blocks
 bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
