@@ -24,7 +24,7 @@ windows:
       panes:
         - main:
            - j oad
-           - /snap/pycharm-professional/230/bin/pycharm.sh ./
+           - /snap/pycharm-professional/237/bin/pycharm.sh ./
   - main:
       layout: main-vertical
       panes:
