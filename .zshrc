@@ -47,6 +47,9 @@ alias ei3b='vim ~/.config/i3/i3blocks.conf'
 alias szsh='exec zsh'
 alias j=jump
 
+# bat
+alias bat=batcat
+
 # Docker
 function  tlm.get_container_id_that_contains() {
  container_name=$1
