@@ -1,0 +1,12 @@
+# List of a the things I modified to get stuff working
+
+#### Make bluetooth turn on A2DP profile by default
+# modify /etc/pulse/default.pa and added this line
+load-module module-switch-on-connect
+
+# Created /etc/bluetooth/audio.conf and put
+[General]
+Disable=Headset
+
+# Apply changes by restarting
+pulseaudio -k 
