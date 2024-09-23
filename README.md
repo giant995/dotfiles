@@ -1,5 +1,5 @@
 # dotfiles
-Stores my Linux dotfiles
+Stores my Linux dotfiles using [chezmoi](https://www.chezmoi.io/)
 
 ## TODO
 - [ ] Install chezmoi
