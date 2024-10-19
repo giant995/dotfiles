@@ -334,13 +334,6 @@ require("lazy").setup({
 		end,
 	},
 
-	-- nvim-blame-line
-	-- Git blame on the current line
-	-- https://github.com/tveskag/nvim-blame-line
-	{
-		"tveskag/nvim-blame-line",
-	},
-
 	-- NOTE: Plugins can specify dependencies.
 	--
 	-- The dependencies are proper plugin specifications as well - anything
