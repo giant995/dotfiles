@@ -81,6 +81,7 @@ plugins=(
 	git
 	jump
 	zsh-autosuggestions
+	zsh-fzf-history-search
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -113,7 +114,9 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-#
+
+# zsh-fzf-history-search
+ZSH_FZF_HISTORY_SEARCH_BIND='^r'
 
 # Sonar-Scanner
 export PATH="$PATH:/opt/sonar-scanner/bin"
@@ -149,3 +152,5 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
+
+eval $(thefuck --alias)
