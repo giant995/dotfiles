@@ -85,6 +85,7 @@ plugins=(
 	jump
 	zsh-autosuggestions
 	zsh-fzf-history-search
+	zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -130,7 +131,6 @@ export GIT_EDITOR=nvim
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # source fzf
 source <(fzf --zsh)
@@ -158,3 +158,11 @@ autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
 
 eval $(thefuck --alias)
+
+# pnpm
+export PNPM_HOME="/home/jmplourde/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
