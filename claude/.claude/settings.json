@@ -1,5 +1,12 @@
 {
   "permissions": {
+    "defaultMode": "default",
+    "ask": [
+      "Write",
+      "Edit",
+      "NotebookEdit",
+      "Bash"
+    ],
     "deny": [
       "Read(.ssh/**)",
       "Read(.env*)"
