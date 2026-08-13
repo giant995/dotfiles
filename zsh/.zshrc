@@ -33,9 +33,6 @@ else
   export EDITOR='nvim'
 fi
 
-# Sonar-Scanner
-export PATH="$PATH:/opt/sonar-scanner/bin"
-
 # Go
 export PATH="$PATH:/usr/local/go/bin"
 
