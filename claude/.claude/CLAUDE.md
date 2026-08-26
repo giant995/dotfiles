@@ -86,11 +86,14 @@ For detailed TypeScript patterns and rationale, load the `typescript-strict` ski
 - No data mutation - immutable data structures only
 - Pure functions wherever possible
 - No nested if/else - use early returns or composition
-- No comments - code should be self-documenting
 - Prefer options objects over positional parameters
 - Use array methods (`map`, `filter`, `reduce`) over loops
 
 For detailed patterns and examples, load the `functional` skill.
+
+#### Code Comments
+
+Never reference openspec artifacts (task numbers like "6.31", design.md, proposal.md, spec.md) in source code comments — those are planning documents, not part of the codebase, and rot as tasks get renumbered/archived. Comments should explain the WHY (a constraint, a bug, an invariant) in terms that make sense without the openspec change being open. This applies to source files and scripts alike; commit messages and tasks.md itself are the right place for task/design references.
 
 ## Development Workflow
 
